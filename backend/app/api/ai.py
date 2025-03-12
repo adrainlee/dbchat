@@ -3,7 +3,8 @@ from typing import List, Dict, Any, Optional
 from pydantic import BaseModel
 
 from app.models.database import DatabaseSchemaModel, AIQueryModel, AIConnectionModel
-from app.services.ai_service import AIService, ChatMessage
+from app.services.ai_service import AIService
+from app.services.ai.ai_messages import ChatMessage
 from app.services.db_services.db_manager import DatabaseManagerService
 
 router = APIRouter(prefix="/api/ai", tags=["ai"])
